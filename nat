@@ -1,0 +1,8 @@
+#!/bin/bash --login
+# 引入 zshrc 中的别名
+source zwyrc
+# 开启 alias
+shopt -s expand_aliases
+jd
+home
+

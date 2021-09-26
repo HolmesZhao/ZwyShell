@@ -1,0 +1,19 @@
+#!/bin/bash --login
+# 引入 zshrc 中的别名
+source zwyrc
+# 开启 alias
+shopt -s expand_aliases
+pushpod
+
+if [ $1 = '-prc' ];then
+    open -a Xcode ./private-pod-config.sh
+elif [ $1 = '-pr' ];then
+    sh ./private-pod-push.sh
+elif [ $1 = '-puc' ];then
+    open -a Xcode ./public-pod-config.sh
+elif [ $1 = '-pu' ];then
+    sh ./public-pod-push.sh
+else
+    echo 'bad command'
+fi
+

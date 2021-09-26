@@ -1,0 +1,42 @@
+unset MAILCHECK
+
+# export
+export ZWY_DIR=~/ZwyShell
+export ZWY_DIR_FeiGeNAT=~/ZwyShell/darwin_amd64_client
+export ZWY_DIR_DSYM=~/ZwyShell/dsym
+export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM
+
+# alias
+# Shell
+alias zwyrccat="cat $ZWY_DIR/zwyrc"
+alias zwyrcopen="open -a Xcode $ZWY_DIR/zwyrc"
+
+# proxy list
+alias proxy='export all_proxy=socks5://127.0.0.1:7891'
+alias unproxy='unset all_proxy'
+
+# NAT
+alias jd='nohup npc -server=jd.nps.zwyxxd.press:8024 -vkey=jd -type=tcp > $ZWY_DIR_FeiGeNAT/npc_jd.log 2>&1 &'
+alias home='nohup npc -server=mb.nps.zwyxxd.press:8024 -vkey=zwy -type=tcp > $ZWY_DIR_FeiGeNAT/npc_home.log 2>&1 &'
+
+# Company Project Path
+alias project='cd /Users/mb/Desktop/MMJ'
+alias mmapi='cd /Users/mb/Desktop/MMJ/MMApi/Example'
+alias pushpod='cd /Users/mb/Desktop/MMJ/iOS_PushPod'
+alias mmj='cd /Users/mb/Desktop/MMJ/iOS_miaomiaoji/PaperangNation/Paperang'
+alias study='cd /Users/mb/Desktop/MMJ/iOS_Study/MMStudy'
+alias international='cd /Users/mb/Desktop/MMJ/paperangInternational/PaperangInternational/PaperangInternational'
+
+# Docker CMD
+alias testcmd='testcmd() { echo ${1:=yjx}; }; testcmd'
+alias docker_size='docker run -itd --privileged --shm-size="1g"  --name zwy_python -v /Users/mb/Desktop/docker/python_ubuntu:/root/images/ holmeszhao/zwyubuntu:python /bin/bash'
+alias docker_jd='docker_jd() { docker exec -it ${1:=jd} node /jd/panel/server.js }; docker_jd'
+alias company='docker run -itd -p 10022:22 -p 9980:80 -p 10443:443 -p 10888:888 -p 18888:8888 -p 19997:9997 -p 19998:9998 -p 19999:9999 -v /Users/mb/Desktop/docker/zwyubuntu:/www/wwwroot/127.0.0.1 --name Company --restart always holmeszhao/zwycentos:latest /usr/sbin/sshd -D'
+
+# Xcode
+alias swiftd='xcrun swift-demangle'
+alias xclist='xcrun simctl list devices'
+alias xcdel='xcrun simctl delete'
+
+# DSYM
+alias dsym_upload='sh uploadDSYM.sh'

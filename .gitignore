@@ -1,0 +1,14 @@
+build/
+*.pbxuser
+!default.pbxuser
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.xcuserstate
+*.DS_Store
+.svn
+*.xcarchive
+*.ipa
+archive/
+.clang-format
