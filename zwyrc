@@ -1,11 +1,16 @@
 unset MAILCHECK
 
 # export
+export ZWY_PHP_PATH=/Applications/MAMP/bin/php/php7.3.29
+export ZWY_PHP=$ZWY_PHP_PATH/bin
+export LDFLAGS="-L${ZWY_PHP_PATH}/lib"
+export CPPFLAGS="-I${ZWY_PHP_PATH}/include"
+
 export ZWY_DIR=~/ZwyShell
-export ZWY_DIR_FeiGeNAT=~/ZwyShell/darwin_amd64_client
-export ZWY_DIR_DSYM=~/ZwyShell/dsym
+export ZWY_DIR_FeiGeNAT=$ZWY_DIR/darwin_amd64_client
+export ZWY_DIR_DSYM=$ZWY_DIR/dsym
 export ZWY_Company=/Users/zwy/Documents/Programming/Projects/MMJ
-export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM
+export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM:$ZWY_PHP
 
 # alias
 # Shell
