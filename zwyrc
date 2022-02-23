@@ -29,7 +29,7 @@ alias home='nohup npc -server=mb.nps.zwyxxd.press:8024 -vkey=zwy -type=tcp > $ZW
 alias project='cd $ZWY_Company'
 alias mmapi='cd $ZWY_Company/MMApi/Example'
 alias pushpod='cd $ZWY_Company/PushPod'
-alias mmj='cd $ZWY_Company/MMJ_Home/PaperangNation/Paperang'
+alias mmj='cd $ZWY_Company/iOS_miaomiaoji/PaperangNation/Paperang'
 alias study='cd $ZWY_Company/Study/MMStudy'
 alias international='cd $ZWY_Company/paperangInternational/PaperangInternational/PaperangInternational'
 
