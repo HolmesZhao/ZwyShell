@@ -4,6 +4,7 @@
 
 * zwyrc 常用的 alias 和一些命令
 * Default.json iTerm2 的配置
+* fixapp 修复第三方 app 已损坏，无法打开 参数为 app 名称
 * podpush 内部执行了推送组件库的命令(前提把 zwyrc 内的 pushpod 脚本目录配置好)
     * -prc 打开私有库配置文件
     * -pr 执行私有库上传命令

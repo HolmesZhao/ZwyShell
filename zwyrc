@@ -18,7 +18,7 @@ alias zwyrccat="cat $ZWY_DIR/zwyrc"
 alias zwyrcopen="open -a Xcode $ZWY_DIR/zwyrc"
 
 # proxy list
-alias proxy='export all_proxy=socks5://127.0.0.1:7891'
+alias proxy='export all_proxy=socks5://127.0.0.1:7890'
 alias unproxy='unset all_proxy'
 
 # NAT
