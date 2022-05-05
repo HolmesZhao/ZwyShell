@@ -41,7 +41,7 @@ else
   #绕过公证
   echo -e "${YELLOW}请输入开机密码，输入完成后按下回车键（输入过程中密码是看不见的）${NC}"
   result=`sudo spctl --master-disable`
-  result=`sudo xattr -rd com.apple.quarantine /Applications/"$appBashName"`
+  result=`sudo xattr -rd com.apple.quarantine ${appDIR}`
   echo ""
   echo "如果密码正确 ✅ 则:"
   echo -e "执行结果：${GREEN}修复成功！${NC}您现在可以正常运行 ${appBashName} 了。"
