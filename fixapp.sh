@@ -1,5 +1,4 @@
 #!/bin/bash --login
-3
 clear
 BLACK="\033[0;30m"
 DARK_GRAY="\033[1;30m"
