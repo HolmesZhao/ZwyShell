@@ -1,8 +1,5 @@
 #!/bin/bash --login
-<<<<<<< HEAD
 3
-=======
->>>>>>> parent of f5add79 (1)
 clear
 BLACK="\033[0;30m"
 DARK_GRAY="\033[1;30m"
