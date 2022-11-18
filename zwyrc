@@ -12,10 +12,14 @@ export ZWY_DIR_DSYM=$ZWY_DIR/dsym
 export ZWY_Company=/Users/zwy/Documents/Programming/Projects/MMJ
 export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM:$ZWY_PHP
 
+# 开启 touchid 解锁, 升级的时候需要用
+# use_touchid
+
 # alias
 # Shell
 alias zwyrccat="cat $ZWY_DIR/zwyrc"
 alias zwyrcopen="open -a Xcode $ZWY_DIR/zwyrc"
+alias q1run="/Users/zwy/Downloads/esptool-master/run.sh"
 
 # proxy list
 alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
