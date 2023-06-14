@@ -1,4 +1,6 @@
 #!/bin/bash --login
+# sh ./flutter_setop.sh (bash/zsh)
+
 clear
 
 if [ ! -d "fluttersdk/flutter/bin" ];then
@@ -28,7 +30,16 @@ if [ ! -d "fluttersdk/flutter/bin" ];then
             echo "下面的环境变量需要写入 ~/.bashrc 或者 ./zshrc"
             echo "export PATH=\$PATH:$PWD/fluttersdk/flutter/bin"
             
-            flutter --version
+            if [ $1 == "zsh" ]; then
+                echo "export PATH=\$PATH:$PWD/fluttersdk/flutter/bin" >> ~/.zshrc
+                source ~/.zshrc
+                flutter --version
+            fi
+            if [ $1 == "bash" ]; then
+                echo "export PATH=\$PATH:$PWD/fluttersdk/flutter/bin" >> ~/.bashrc
+                source ~/.bashrc
+                flutter --version
+            fi
         fi
     fi
 else
