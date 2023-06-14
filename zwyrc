@@ -10,18 +10,23 @@ export ZWY_DIR=~/ZwyShell
 export ZWY_DIR_FeiGeNAT=$ZWY_DIR/darwin_amd64_client
 export ZWY_DIR_DSYM=$ZWY_DIR/dsym
 export ZWY_Company=/Users/zwy/Documents/Programming/Projects/MMJ
-export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM:$ZWY_PHP
+export ZWY_Flutter=$ZWY_DIR/fluttersdk/flutter/bin
+export EBOOK_PATH=/Applications/calibre.app/Contents/MacOS/ebook-convert
+export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM:$ZWY_PHP:$EBOOK_PATH:$ZWY_Flutter
 
 # 开启 touchid 解锁, 升级的时候需要用
 # use_touchid
 
 # alias
 # Shell
+alias zwyshell="cd $ZWY_DIR"
+alias zwyshellopen="open $ZWY_DIR"
 alias zwyrccat="cat $ZWY_DIR/zwyrc"
 alias zwyrcopen="open -a Xcode $ZWY_DIR/zwyrc"
 alias q1run="/Users/zwy/Downloads/esptool-master/run.sh"
 
 # proxy list
+alias proxyzyb='export https_proxy=http://10.254.12.245:7890 http_proxy=http://10.254.12.245:7890 all_proxy=socks5://10.254.12.245:7890'
 alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
 alias unproxy='unset all_proxy && unset http_proxy && unset https_proxy'
 
@@ -34,8 +39,12 @@ alias project='cd $ZWY_Company'
 alias mmapi='cd $ZWY_Company/MMApi/Example'
 alias pushpod='cd $ZWY_Company/PushPod'
 alias mmj='cd $ZWY_Company/iOS_miaomiaoji/PaperangNation/Paperang'
+alias mmj2='cd $ZWY_Company/iOS_miaomiaoji_2/PaperangNation/Paperang'
 alias study='cd $ZWY_Company/Study/MMStudy'
 alias international='cd $ZWY_Company/paperangInternational/PaperangInternational/PaperangInternational'
+alias devicekit='cd $ZWY_Company/MMDeviceKit/Example'
+alias mmui='cd $ZWY_Company/miaomiaoji_ui/PaperangUI'
+alias iot='cd $ZWY_Company/iot-union-ios'
 
 # Docker CMD
 alias testcmd='testcmd() { echo ${1:=yjx}; }; testcmd'
