@@ -12,3 +12,4 @@ xcuserdata
 *.ipa
 archive/
 .clang-format
+fluttersdk/
