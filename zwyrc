@@ -13,11 +13,11 @@ alias zwyrccat="cat $ZWY_DIR/zwyrc"
 alias zwyrcopen="open -a Xcode $ZWY_DIR/zwyrc"
 
 # proxy list
-alias proxy='export all_proxy=socks5://127.0.0.1:7891'
+alias proxy='export all_proxy=socks5://127.0.0.1:7890'
 alias unproxy='unset all_proxy'
 
 # NAT
-alias jd='nohup npc -server=jd.nps.zwyxxd.press:8024 -vkey=jd -type=tcp > $ZWY_DIR_FeiGeNAT/npc_jd.log 2>&1 &'
+#alias jd='nohup npc -server=jd.nps.zwyxxd.press:8024 -vkey=jd -type=tcp > $ZWY_DIR_FeiGeNAT/npc_jd.log 2>&1 &'
 alias home='nohup npc -server=mb.nps.zwyxxd.press:8024 -vkey=zwy -type=tcp > $ZWY_DIR_FeiGeNAT/npc_home.log 2>&1 &'
 
 # Company Project Path
