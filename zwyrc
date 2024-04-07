@@ -11,8 +11,12 @@ export ZWY_DIR_FeiGeNAT=$ZWY_DIR/darwin_amd64_client
 export ZWY_DIR_DSYM=$ZWY_DIR/dsym
 export ZWY_Company=/Users/zwy/Documents/Programming/Projects/MMJ
 export ZWY_Flutter=$ZWY_DIR/fluttersdk/flutter/bin
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export EBOOK_PATH=/Applications/calibre.app/Contents/MacOS/ebook-convert
-export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM:$ZWY_PHP:$EBOOK_PATH:$ZWY_Flutter
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_HOME_TOOLS=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM:$ZWY_PHP:$EBOOK_PATH:$ZWY_Flutter:$ANDROID_HOME_TOOLS
 
 # 开启 touchid 解锁, 升级的时候需要用
 # use_touchid
