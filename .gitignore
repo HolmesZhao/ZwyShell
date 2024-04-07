@@ -13,3 +13,5 @@ xcuserdata
 archive/
 .clang-format
 fluttersdk/
+*.log
+
