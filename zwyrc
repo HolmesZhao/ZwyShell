@@ -60,7 +60,7 @@ alias xcdel='xcrun simctl delete'
 # DSYM
 alias dsym_upload='sh uploadDSYM.sh'
 
-# BancoEstado
+# BancoEstado 下个项目 a_scripts 里面的东西避免重复
 export BE_DIR=~/Documents/Programming/Projects/iWhaleCloud/BancoEstado
 export BE_SCRIPTS_DIR=${BE_DIR}/a_scripts
 export PATH=$PATH:$BE_SCRIPTS_DIR
