@@ -4,7 +4,7 @@ unset MAILCHECK
 export ZWY_DIR=~/ZwyShell
 export ZWY_DIR_FeiGeNAT=~/ZwyShell/darwin_amd64_client
 export ZWY_DIR_DSYM=~/ZwyShell/dsym
-export ZWY_Company=/Users/mb/Desktop/MMJ
+export ZWY_Company=/Users/zhaowuyi/Desktop/MMJ
 export PATH=$PATH:$ZWY_DIR:$ZWY_DIR_FeiGeNAT:$ZWY_DIR_DSYM
 
 # alias
@@ -30,9 +30,9 @@ alias international='cd $ZWY_Company/paperangInternational/PaperangInternational
 
 # Docker CMD
 alias testcmd='testcmd() { echo ${1:=yjx}; }; testcmd'
-alias docker_size='docker run -itd --privileged --shm-size="1g"  --name zwy_python -v /Users/mb/Desktop/docker/python_ubuntu:/root/images/ holmeszhao/zwyubuntu:python /bin/bash'
+alias docker_size='docker run -itd --privileged --shm-size="1g"  --name zwy_python -v /Users/zhaowuyi/Desktop/docker/python_ubuntu:/root/images/ holmeszhao/zwyubuntu:python /bin/bash'
 alias docker_jd='docker_jd() { docker exec -it ${1:=jd} node /jd/panel/server.js }; docker_jd'
-alias company='docker run -itd -p 10022:22 -p 9980:80 -p 10443:443 -p 10888:888 -p 18888:8888 -p 19997:9997 -p 19998:9998 -p 19999:9999 -v /Users/mb/Desktop/docker/zwyubuntu:/www/wwwroot/127.0.0.1 --name Company --restart always holmeszhao/zwycentos:latest /usr/sbin/sshd -D'
+alias company='docker run -itd -p 10022:22 -p 9980:80 -p 10443:443 -p 10888:888 -p 18888:8888 -p 19997:9997 -p 19998:9998 -p 19999:9999 -v /Users/zhaowuyi/Desktop/docker/zwyubuntu:/www/wwwroot/127.0.0.1 --name Company --restart always holmeszhao/zwycentos:latest /usr/sbin/sshd -D'
 
 # Xcode
 alias swiftd='xcrun swift-demangle'

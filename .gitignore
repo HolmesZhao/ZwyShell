@@ -13,5 +13,5 @@ xcuserdata
 archive/
 .clang-format
 fluttersdk/
-*.log
+darwin_amd64_client/*.log
 
