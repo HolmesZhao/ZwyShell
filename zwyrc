@@ -21,7 +21,6 @@ alias zwyrccat="cat $ZWY_DIR/zwyrc"
 alias zwyrcopen="open -a Xcode $ZWY_DIR/zwyrc"
 
 # proxy list
-alias proxyzyb='export https_proxy=http://10.254.12.245:7890 http_proxy=http://10.254.12.245:7890 all_proxy=socks5://10.254.12.245:7890'
 alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
 alias unproxy='unset all_proxy && unset http_proxy && unset https_proxy'
 
@@ -36,7 +35,6 @@ alias pushpod='cd $ZWY_Company/PushPod'
 alias study='cd $ZWY_Company/Study/MMStudy'
 alias international='cd $ZWY_Company/paperangInternational/PaperangInternational/PaperangInternational'
 alias devicekit='cd $ZWY_Company/MMDeviceKit/Example'
-alias mmui='cd $ZWY_Company/miaomiaoji_ui/PaperangUI'
 alias iot='cd $ZWY_Company/iot-union-ios'
 
 # Docker CMD
@@ -52,3 +50,13 @@ alias xcdel='xcrun simctl delete'
 
 # DSYM
 alias dsym_upload='sh uploadDSYM.sh'
+
+# BancoEstado
+export BE_DIR=~/Documents/Programming/Projects/iWhaleCloud/BancoEstado
+export BE_SCRIPTS_DIR=${BE_DIR}/a_scripts
+export PATH=$PATH:$BE_SCRIPTS_DIR
+
+# BancoEstado Shell
+alias be='cd $BE_DIR'
+alias bew='cd $BE_DIR/standard-wallet-ios'
+
