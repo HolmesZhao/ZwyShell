@@ -14,4 +14,3 @@ archive/
 .clang-format
 fluttersdk/
 darwin_amd64_client/*.log
-
